@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { commands } from "./assets/src/data/commands"
-import { ReactTable } from "./assets/src/data/components/ReactTable";
+import { ReactTable } from "./assets/src/components/ReactTable";
 
 function App() {
 

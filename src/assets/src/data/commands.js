@@ -163,4 +163,40 @@ export const commands = [
         'name': 'whatis command',
         'description': 'Te da un manual del comando pero más resumido (funciona en ubuntu)'
     },
+    {
+        'name': 'ls *.txt',
+        'description': 'Wildcards filtra los archivos con la extención (en este caso .txt)'
+    },
+    {
+        'name': 'ls datos*',
+        'description': 'Wildcards filtra los archivos que empiecen con el parametro escrito "datos" antes del "*" (por ejemplo: datos1 datos2 datos123)'
+    },
+    {
+        'name': 'ls datos?',
+        'description': 'Wildcards filtra los archivos que empiecen con el parametro escrito "datos" antes del "?" pero que después del parametro enviado "datos" solo contenga un caracter (por ejemplo: datos1 datos2)'
+    },
+    {
+        'name': 'ls datos???',
+        'description': 'Wildcards filtra los archivos que empiecen con el parametro escrito "datos" antes del "???" pero que después del parametro enviado "datos" contenga tres caracteres (por ejemplo: datos123)'
+    },
+    {
+        'name': 'ls [[:upper:]]*',
+        'description': 'Wildcards filtra los archivos que empiecen con mayúsculas y que despues tenga otros caracteres (busca contenido de por lo menos los primeros 2 niveles de carpetas)'
+    },
+    {
+        'name': 'ls -d [[:upper:]]*',
+        'description': 'Wildcards filtra los directorios que empiecen con mayúsculas y que despues tenga otros caracteres'
+    },
+    {
+        'name': 'ls -d [[:lower:]]*',
+        'description': 'Wildcards filtra los directorios que empiecen con minúsculas y que despues tenga otros caracteres'
+    },
+    {
+        'name': 'ls [ad]*',
+        'description': 'Wildcards filtra por caracteres que empiecen con las letras que están dentro de los corchetes (ejemplo: datos1 abc dot...)'
+    },
+    {
+        'name': 'ls [ai]*.html',
+        'description': 'Wildcards filtra por caracteres que empiecen con las letras que están dentro de los corchetes y con la extención ".html" (ejemplo: index.html)'
+    },
 ]
