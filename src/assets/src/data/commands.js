@@ -199,4 +199,28 @@ export const commands = [
         'name': 'ls [ai]*.html',
         'description': 'Wildcards filtra por caracteres que empiecen con las letras que están dentro de los corchetes y con la extención ".html" (ejemplo: index.html)'
     },
+    {
+        'name': '1 y 2 éstandar Output',
+        'description': 'Son estandares output 1 es correcto 2 es error'
+    },
+    {
+        'name': 'ls Pictures > misarchivos.txt',
+        'description': 'Crea un archivo .txt (o lo sobreescribe por el operador ">") con el nombre de todos los archivos contenidos en la carpeta Pictures'
+    },
+    {
+        'name': 'ls Pictures >> misarchivos.txt',
+        'description': 'Crea un archivo .txt (o añade líneas por el operador ">>") con el nombre de todos los archivos contenidos en la carpeta Pictures'
+    },
+    {
+        'name': 'ls ljksadas > error.txt',
+        'description': 'Crea un archivo .txt pero como en este ejemplo la carpeta no existe entonces crea un archivo vacio'
+    },
+    {
+        'name': 'ls ljksadas 2> error.txt',
+        'description': 'Crea un archivo .txt pero aquí si se guarda el error en texto (el número 2 es de finderror)'
+    },
+    {
+        'name': 'ls ljksadas > output.txt 2>&1',
+        'description': 'Reedirigir el estandar output y el éstandar error esto es muy util para saber si nos va a traer un resultado bueno o malo'
+    },
 ]
