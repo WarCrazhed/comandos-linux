@@ -223,4 +223,64 @@ export const commands = [
         'name': 'ls ljksadas > output.txt 2>&1',
         'description': 'Reedirigir el estandar output y el éstandar error esto es muy util para saber si nos va a traer un resultado bueno o malo'
     },
+    {
+        'name': 'echo "Hola Mundo"',
+        'description': 'Imprime el texto dentro de las comillas "Hola Mundo"'
+    },
+    {
+        'name': 'cat error.txt output.txt',
+        'description': 'Imprime el contenido de un archivo y ademas permite concatenar con otro archivo'
+    },
+    {
+        'name': 'cat < error.txt',
+        'description': 'el < redirige a un éstandar output lo mismo que hacer "cat error.txt"'
+    },
+    {
+        'name': 'ls -lh | less',
+        'description': 'permite reedirigir a otro comando, es decir ejecutar dos comandos a la vez (por ejemplo en este comando se lista y ademas permite buscar con el comando less entre los archivos)'
+    },
+    {
+        'name': 'ls -lh | tee output.txt | less',
+        'description': 'permite reedirigir a los otros comandos despues del pipe (por ejemplo primero va a listar por el comando ls -lh y creará el archivo txt con el contenido de ls -lh por el comando tee y permitira buscar por el comando less)'
+    },
+    {
+        'name': 'ls -lh Pictures | sort | tee pictures.txt | less',
+        'description': 'permite reedirigir a los otros comandos despues del pipe (por ejemplo primero va a listar por el comando ls -lh, despues va a ordenarlos por el comando sort y creará el archivo txt con el contenido de ls -lh y sort, además por el comando tee y permitira buscar por el comando less)'
+    },
+    {
+        'name': 'cowsay "Hola"',
+        'description': 'Vaca diciendo Hola (cabe mencionar que debe estar instalada esta funcionalidad sudo apt install cowsay)'
+    },
+    {
+        'name': 'echo "Hola Mundo" | lolcat',
+        'description': 'Permite imprimir lo que esta dentro de las comillas y con el pipe redirige a lolcat y se imprime el texto degradado por lolcat (cabe mencionar que debe estar instalada esta funcionalidad sudo apt install lolcat)'
+    },
+    {
+        'name': 'cowsay "Hola Amigos" | lolcat',
+        'description': 'Permite imprimir lo que esta dentro de las comillas (con la vaca) y con el pipe redirige a lolcat y se imprime el texto degradado por lolcat (cabe mencionar que debe estar instalada esta funcionalidad sudo apt install lolcat y sudo apt install cowsay)'
+    },
+    {
+        'name': 'ls; mkdir holi; cal',
+        'description': 'Se ejecutan de manera sincrona (primero lista los archivos, luego crea la carpeta y al final muestra un calendario)'
+    },
+    {
+        'name': 'ls & date & cal',
+        'description': 'Se ejecutan de manera asincrona usando "&" (debemos tener cuidado porque ejecuta otra terminal en segundo plano)'
+    },
+    {
+        'name': 'mkdir test && cd test',
+        'description': 'Comando condicional, si se cumple la primera instrucción enseguida se ejecutará la siguiente'
+    },
+    {
+        'name': 'cd CarpetaInexistente && touch archivo.txt && echo "Archivo Creado"',
+        'description': 'Comando condicional, si se cumple la primera instrucción enseguida se ejecutará la siguiente (en este ejemplo la carpeta no existe, entonces el comando para de ejecutarse y no se ejecutan las siguientes instrucciones)'
+    },
+    {
+        'name': 'cd CarpetaInexistente || touch archivo.txt || echo "Archivo Creado"',
+        'description': 'Comando condicional, el comando "operador de control or ||" si no se cumple la primera instrucción enseguida se ejecutará la siguiente (en este ejemplo la carpeta no existe y marcará el error en la terminal, pero, el comando siguiente comando seguirá ejecutandose)'
+    },
+    {
+        'name': 'cd CarpetaInexistente || echo "Cambio de carpeta"',
+        'description': 'Comando condicional, el comando "operador de control or ||" si no se cumple la primera instrucción enseguida se ejecutará la siguiente (en este ejemplo la carpeta no existe y marcará el error en la terminal, pero, si imprimira la segunda instrucción y debemos tener cuidado porque puede ser incoherente)'
+    },
 ]
