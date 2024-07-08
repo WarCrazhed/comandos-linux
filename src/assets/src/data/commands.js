@@ -283,4 +283,40 @@ export const commands = [
         'name': 'cd CarpetaInexistente || echo "Cambio de carpeta"',
         'description': 'Comando condicional, el comando "operador de control or ||" si no se cumple la primera instrucción enseguida se ejecutará la siguiente (en este ejemplo la carpeta no existe y marcará el error en la terminal, pero, si imprimira la segunda instrucción y debemos tener cuidado porque puede ser incoherente)'
     },
+    {
+        'name': '> archivo.txt',
+        'description': 'Crear archivo'
+    },
+    {
+        'name': 'cat > archivo.txt',
+        'description': 'Escribir contenido de archivo Ctrl + D para salir'
+    },
+    {
+        'name': 'chmod 755 archivo.txt',
+        'description': 'Cambiar permisos de archivo'
+    },
+    {
+        'name': 'chmod u-r archivo.txt',
+        'description': 'Quitar permiso de lectura al usuario del archivo.txt'
+    },
+    {
+        'name': 'chmod u+r archivo.txt',
+        'description': 'Agregar permiso de lectura al usuario del archivo.txt'
+    },
+    {
+        'name': 'chmod u-x,go=w archivo.txt',
+        'description': 'Quitar permiso de ejecución al usuario, al grupo y otros dejar solo el permiso de lectura del archivo.txt (en este caso el código de go=w va a sobre escribir los otros permisos de grupo y otros)'
+    },
+    {
+        'name': 'whoami',
+        'description': 'Comando para saber que usuario es'
+    },
+    {
+        'name': 'su root',
+        'description': 'Cambiar de usuario (sino buscas cambiar a root y no funciona existe la alternativa de sudo su)'
+    },
+    {
+        'name': 'passwd',
+        'description': 'Cambiar la contraseña de usuario (recomendable no tener la misma que root)'
+    },
 ]
