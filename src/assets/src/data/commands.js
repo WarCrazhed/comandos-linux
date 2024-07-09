@@ -319,4 +319,44 @@ export const commands = [
         'name': 'passwd',
         'description': 'Cambiar la contraseña de usuario (recomendable no tener la misma que root)'
     },
+    {
+        'name': 'ln -s Documents/Dev Desarrollo',
+        'description': 'Link Simbolico recibe como parametro la ruta y el nombre que le daremos (acceso directo desde la terminal)'
+    },
+    {
+        'name': 'printenv',
+        'description': 'Mostrar las variables de entorno'
+    },
+    {
+        'name': 'echo $HOME',
+        'description': 'Imprimir la información de la variable de entorno'
+    },
+    {
+        'name': 'echo $PATH',
+        'description': 'Imprimir la información de la variable de entorno PATH que contiene la información de todos los binarios que ejecutamos'
+    },
+    {
+        'name': 'cd $HOME',
+        'description': 'Nos movemos a la ruta de esta variable de entorno'
+    },
+    {
+        'name': 'code .bashrc',
+        'description': 'Entrar desde vscode para editar las variables de entorno (code .zshrc en Mac)'
+    },
+    {
+        'name': 'bash',
+        'description': 'Cargar bash de nuevo para reflejar cambios en la variable de entorno'
+    },
+    {
+        'name': 'echo $PLATZI_MESSAGE',
+        'description': 'Este es un ejemplo de una variable de entorno registrada por nosotros (PLATZI_MESSAGE="Hola amigos") que al ejecutar este código en la terminal nos mostrará "Hola amigos"'
+    },
+    {
+        'name': 'echo $PLATZI_MESSAGE',
+        'description': 'Este es un ejemplo de una variable de entorno registrada por nosotros (PLATZI_MESSAGE="Hola amigos") que al ejecutar este código en la terminal nos mostrará "Hola amigos"'
+    },
+    {
+        'name': 'PATH=$PATH:/home/codevars/bin',
+        'description': 'Añadir una nueva ruta a la variable PATH'
+    },
 ]
