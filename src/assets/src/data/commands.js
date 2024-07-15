@@ -105,19 +105,19 @@ export const commands = [
     },
     {
         'name': 'head file.txt',
-        'description': 'Muestra las primeras 10 lineas de un archivo'
+        'description': 'Muestra las primeras 10 líneas de un archivo'
     },
     {
         'name': 'head file.txt -n 15',
-        'description': 'Muestra las primeras 15 lineas de un archivo especificadas por la bandera -n 15'
+        'description': 'Muestra las primeras 15 líneas de un archivo especificadas por la bandera -n 15'
     },
     {
         'name': 'tail file.txt',
-        'description': 'Muestra las ultimas 10 lineas de un archivo'
+        'description': 'Muestra las ultimas 10 líneas de un archivo'
     },
     {
         'name': 'tail file.txt -n 15',
-        'description': 'Muestra las ultimas 15 lineas de un archivo especificadas por la bandera -n 15'
+        'description': 'Muestra las ultimas 15 líneas de un archivo especificadas por la bandera -n 15'
     },
     {
         'name': 'less file.txt',
@@ -358,5 +358,105 @@ export const commands = [
     {
         'name': 'PATH=$PATH:/home/codevars/bin',
         'description': 'Añadir una nueva ruta a la variable PATH'
+    },
+    {
+        'name': 'which code',
+        'description': 'Nos muestra la ubicación de visual studio code (/usr/bin/code)'
+    },
+    {
+        'name': 'find ./ -name file',
+        'description': 'Busca todos los archivos despues de la ruta (./) con el nombre file'
+    },
+    {
+        'name': 'find ./ -name *.txt',
+        'description': 'Busca todos los archivos despues de la ruta (./) con la extención .txt'
+    },
+    {
+        'name': 'find ./ -name *.txt | less',
+        'description': 'Busca todos los archivos despues de la ruta (./) con la extención .txt y ademas buscar con el comando less'
+    },
+    {
+        'name': 'find ./ -type d -name Documents',
+        'description': 'Busca todos los directorios con el nombre Documents'
+    },
+    {
+        'name': 'find ./ -type f -name *.log',
+        'description': 'Busca todos los archivos con la extención log'
+    },
+    {
+        'name': 'find ./ -size 20M',
+        'description': 'Busca todos los archivos con un tamaño mayor a 20 Megabytes'
+    },
+    {
+        'name': 'grep the movies.csv',
+        'description': 'Busca todas las líneas que contengan y coincida con la palabra the'
+    },
+    {
+        'name': 'grep -i The movies.csv',
+        'description': 'Busca todas las líneas que contengan y coincida con la palabra The pero con la bandera -i agrega el ignore case sensitive (es decir que no importa si la palabra que estas buscando se escribe en mayúsculas o minúsculas)'
+    },
+    {
+        'name': 'grep -i The movies.csv | less',
+        'description': 'Busca todas las líneas que contengan y coincida con la palabra The pero con la bandera -i agrega el ignore case sensitive (es decir que no importa si la palabra que estas buscando se escribe en mayúsculas o minúsculas) y less para observar de una mejor manera'
+    },
+    {
+        'name': 'grep -c the movies.csv',
+        'description': 'Busca cuantas veces coincide esta palabra en the movies.csv'
+    },
+    {
+        'name': 'grep -ci the movies.csv',
+        'description': 'Busca cuantas veces coincide esta palabra en the movies.csv pero ignorando si son mayúsculas o minúsculas'
+    },
+    {
+        'name': 'grep -vi towers movies.csv',
+        'description': 'Busca todas las líneas que No coincidan con la palabra towers ignorando mayúsculas y minúsculas'
+    },
+    {
+        'name': 'grep -vi towers movies.csv > sintowers.txt',
+        'description': 'Busca todas las líneas que No coincidan con la palabra towers ignorando mayúsculas y minúsculas y además lo guarda en un archivo (sintowers.txt)'
+    },
+    {
+        'name': 'wc movies.cv',
+        'description': 'Muestra cuantas líneas, letras en general (carácteres) y tamaño en bits tiene el archivo movies.csv'
+    },
+    {
+        'name': 'wc -l movies.cv',
+        'description': 'Muestra cuantas líneas tiene el archivo movies.csv'
+    },
+    {
+        'name': 'wc -w movies.cv',
+        'description': 'Muestra cuantos carácteres tiene el archivo movies.csv'
+    },
+    {
+        'name': 'wc -c movies.cv',
+        'description': 'Muestra cuantos bits tiene el archivo movies.csv'
+    },
+    {
+        'name': 'ifconfig',
+        'description': 'Muestra Información sobre nuestra red'
+    },
+    {
+        'name': 'ping www.google.com',
+        'description': 'Mostrar si alguna página esta áctiva (También puede servir para saber si la conexión de red esta funcionando correctamente) y lo hace en un bucle el cual estará trayendo la información hasta que paremos la ejecución'
+    },
+    {
+        'name': 'curl www.google.com',
+        'description': 'Nos trae un archivo en forma de texto a través de la red (en este caso nos trae el archivo html de esta pagina)'
+    },
+    {
+        'name': 'curl www.google.com > index.html',
+        'description': 'Guarda en un archivo lo que tiene el output a través de la red (en este caso nos guarda el archivo html de esta pagina)'
+    },
+    {
+        'name': 'wget www.google.com',
+        'description': 'Descarga el archivo directamente a nuestra computadora, además de mostrarnos otra información (como el estatus http etc)'
+    },
+    {
+        'name': 'traceroute www.google.com',
+        'description': 'Nos muestra todos los puntos a los que nos vamos conectando'
+    },
+    {
+        'name': 'netstat -i ',
+        'description': 'es como usar ifconfig pero nos muestra la información de una manera más amigable y resumida'
     },
 ]
