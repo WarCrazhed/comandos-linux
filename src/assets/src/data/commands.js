@@ -459,4 +459,36 @@ export const commands = [
         'name': 'netstat -i ',
         'description': 'es como usar ifconfig pero nos muestra la información de una manera más amigable y resumida'
     },
+    {
+        'name': 'tar -cvf ToCompress.tar ToCompress',
+        'description': 'Este comando comprime una carpeta extensión "tar", la bandera -c es de comprimir, la v es de mostrar lo que esta haciendo en la terminal y la f que nos va a comprimir un file, se añade el nombre de la carpeta que estará comprimida y la carpeta a comprimir'
+    },
+    {
+        'name': 'tar -cvzf ToCompress.tar.gz ToCompress',
+        'description': 'Este comando comprime una carpeta extensión "tar.gz" (gzip), la bandera -c es de comprimir, la z es para especificar que será extensión gz (gzip), la v es de mostrar lo que esta haciendo en la terminal y la f que nos va a comprimir un file, se añade el nombre de la carpeta que estará comprimida y la carpeta a comprimir, este es más recomendable que la extención ".tar"'
+    },
+    {
+        'name': 'tar -xvzf ToCompress.tar.gz',
+        'description': 'Este comando descomprime una carpeta extensión "tar.gz" (gzip), la bandera -x es de descomprimir'
+    },
+    {
+        'name': 'zip -r ToCompressInZip.zip ToCompress',
+        'description': 'Este comando comprime una carpeta a extensión "zip" de manera recursiva por la bandera (-r)'
+    },
+    {
+        'name': 'unzip ToCompressInZip.zip',
+        'description': 'Este comando descomprime una carpeta a extensión "zip"'
+    },
+    {
+        'name': 'ps',
+        'description': 'Muestra los procesos que esta corriendo en nuestra terminal actualmente, muestra el PID (Process ID)'
+    },
+    {
+        'name': 'kill 20425',
+        'description': 'Para terminar un proceso ejecutamos el comando kill y le añadimos el Process ID que queremos finalizar'
+    },
+    {
+        'name': 'top',
+        'description': 'Muestra todos los procesos que usan más recursos (si presionamos "h" nos va aparecer toda la ayuda (tambien nos muestra los Process ID), este es útil para ver más procesos y cuando no podamos terminar un proceso con kill buscando con ps (también existe otro llamado htop más completo pero se debe instalar ya que no viene de forma nativa)'
+    },
 ]
