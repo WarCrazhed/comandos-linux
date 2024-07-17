@@ -491,4 +491,64 @@ export const commands = [
         'name': 'top',
         'description': 'Muestra todos los procesos que usan más recursos (si presionamos "h" nos va aparecer toda la ayuda (tambien nos muestra los Process ID), este es útil para ver más procesos y cuando no podamos terminar un proceso con kill buscando con ps (también existe otro llamado htop más completo pero se debe instalar ya que no viene de forma nativa)'
     },
+    {
+        'name': 'jobs',
+        'description': 'Con este comando consultamos todos los procesos que tenemos en el background'
+    },
+    {
+        'name': 'fg 1',
+        'description': 'Con este comando continuamos con la tarea que tenemos en el background, agregando el número de tarea que vimos en la lista que nos muestra el comando jobs'
+    },
+    {
+        'name': 'cat > mi_nota.txt &',
+        'description': 'Usando el operador de control & nos permite enviar de manera directa a un proceso al background una vez ejecutado'
+    },
+    {
+        'name': 'bg 1',
+        'description': 'Con este comando funciona de manera similar a fg pero en vez de traerlo al foreground, manda el trabajo al background'
+    },
+    {
+        'name': 'vi',
+        'description': 'Editor de texto vi'
+    },
+    {
+        'name': 'vim',
+        'description': 'Editor de texto vi moderno'
+    },
+    {
+        'name': ':q',
+        'description': 'Salir de vim'
+    },
+    {
+        'name': 'vim index.html',
+        'description': 'Crear y abrir un archivo con vim'
+    },
+    {
+        'name': 'i',
+        'description': 'i de insert para comenzar a escribir en vim'
+    },
+    {
+        'name': 'tecla ESC en vim',
+        'description': 'Para salir del modo insert en vim'
+    },
+    {
+        'name': '/',
+        'description': 'El "/" en vim al igual que less sirve para poder hacer una busqueda'
+    },
+    {
+        'name': 'teclear 2 veces tecla "D" en vim',
+        'description': 'Teclear dos veces la tecla "D" para eliminar una linea en el modo normal'
+    },
+    {
+        'name': ':w',
+        'description': 'Guardar en vim (también para salir podemos usar :wq o :wq! para salir de manera forzada)'
+    },
+    {
+        'name': 'chsh -s $(which zsh)',
+        'description': 'Cambiar de shell (en este caso a zsh)'
+    },
+    {
+        'name': 'sh -c "$(wget https//..../install.sh)"',
+        'description': 'Ejecutar archivos .sh'
+    },
 ]
